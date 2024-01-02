@@ -1,0 +1,302 @@
+body {
+  font-family: Arial, Helvetica, sans-serif; 
+  margin: 0; 
+  font-weight: lighter;
+}
+.top {
+  background-image: url(img/ks.png); 
+  background-size: cover; 
+  height: 90vh;
+  opacity: 90%;
+  z-index: -2;
+}
+.topvisi {
+  background-image: url(img/sklh.png); 
+  background-size: cover; 
+  height: 100vh; 
+  opacity: 100%; 
+  z-index: -2;
+}
+.topgalery {
+  background-image: url(img/Slider2.png); 
+  background-size: cover; 
+  height: 90vh; 
+  opacity: 90%; 
+  z-index: -2;
+}
+.menu img {
+  float: left; 
+  width:300px; 
+  padding-left: 90px;
+}
+.bghitam {
+  background: rgb(255, 255, 255); 
+  height: 90vh; 
+  position: absolute; 
+  top:0; 
+  left: 0; 
+  right: 0; 
+  opacity: 50%; 
+  z-index: -3; 
+  background-image: url ('bg.jpeg') ;
+}
+.menu ul{
+  list-style: none;
+  display: inline-flex; 
+  float: right; 
+  padding-right: 80px; 
+  padding-top: 20px;
+}
+.menu ul li{
+  padding-right: 20px; 
+}
+.menu ul li a {
+  text-decoration: none; 
+  cursor: pointer; 
+  color: rgb(2, 2, 2);
+}
+.text {
+   text-align: 
+   right; 
+   padding-right: 90px;
+   padding-top: 230px; 
+   color: rgb(0, 0, 0); 
+   font-weight: lighter;
+  }
+.textvisi { 
+  text-align: right; 
+  padding-right: 90px;
+  padding-top: 20px; 
+  color: rgb(0, 0, 0); 
+  font-weight: lighter;
+}
+.text h1 {
+  font-size: 40px;
+}
+.text p {
+  font-size: 25px;
+}
+.text span {
+  background: #000000; 
+  border-radius: 50px; 
+  padding: 15px; 
+}
+.text span a{
+  text-decoration: none; 
+  color: rgb(2, 2, 2); 
+  border: 1px solid transparent; 
+  padding-top: 20px;
+}
+#prestasi {
+   padding-top: 50px; 
+   text-align: center; 
+  }
+#prestasi h2 h3 p {
+  font-weight: lighter; 
+}
+#prestasi p {
+  opacity: 100%;
+}
+.fotopres img {
+  width: 400px; 
+}
+.fotopres {
+  padding-top: 30px;
+}
+.grid {
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr; 
+  width: 100%; 
+  margin: auto;  
+}
+.depan {
+   opacity: 70%; 
+   padding-top: 50px; 
+  }
+.depan img {
+  width: 100%; 
+  z-index: -3; 
+  height: 300px;
+}
+.struktur img {
+  width: 100px;
+  padding-top: 50px;
+}
+.keunggulan {
+  text-align: center; 
+  font-weight: lighter; 
+  padding-top: 50px;
+}
+.keunggulan h1 {
+  opacity: 80%;
+}
+.keunggulan p{
+  opacity: 50%;
+}
+.grid2 {
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.pendaftaran {
+  background-image: url(img/Pendaftaran.jpg); 
+  height: 300px;
+  color: rgb(2, 2, 24); 
+  font-weight: lighter; 
+  text-align: center; 
+  opacity: 20%; 
+  padding-top: 20px; 
+  padding-bottom: 40px;
+  
+}
+.pendaftaran a{
+   border: 1px solid transparent; 
+   background: red; 
+   color: rgb(255, 255, 255); 
+   text-decoration: none; 
+   padding: 10px; 
+   border-radius: 5px; 
+  }
+.berita{
+  text-align: center; 
+  padding-top: 50px;
+}
+.berita p{
+  opacity: 50%;
+}
+.tengah {
+  text-align: center;
+}
+.grid4 {
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr; 
+  width: 90%; 
+  margin: auto;
+}
+.grid3 p h2 {
+  text-align: left;
+}
+.grid3 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.19); 
+  padding: 20px;
+}
+.grid3 a{
+   text-decoration: none; 
+   border: 1px solid transparent;
+   padding: 10px; 
+   background:#1CAAE9; 
+   border-radius: 50px; 
+   color: white; 
+  }
+.grid3 img {
+  border-radius: 4px 4px 0 0;
+}
+.des {
+  width: 20%; 
+  padding-left: 120px; 
+  color: white; 
+  padding-top: 80px;
+}
+.footer {
+  background: rgb(9, 170, 36); 
+  color: white; 
+  opacity: 90%; 
+  padding: 20px;
+  padding-left: 120px;
+}
+.footer p{
+  opacity: 50%;
+}
+.footer a{
+  text-decoration: none; 
+  color: white;
+}
+.batas {
+  background: #057c05; 
+  height: 60px; 
+  color: white; 
+  font-weight: lighter; 
+  text-align: center; 
+  opacity: 90%; 
+  padding-top: 22px; 
+  padding-bottom: 33px;
+}
+.batasgalery {
+  background: white; 
+  height: 60px; 
+  color: white; 
+  font-weight: lighter; 
+  text-align: center; 
+  opacity: 90%; 
+  padding-top: 22px; 
+  padding-bottom: 33px;
+}
+.batasfooter {
+  background: #057c05; 
+  height: 120px; 
+  color: white; 
+  font-weight: lighter; 
+  text-align: center; 
+  opacity: 90%; 
+  padding-top: 22px; 
+  padding-bottom: 33px;
+}
+.content {
+  margin: 50px 10%;
+  padding: 30px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(22, 7, 7, 0.342);
+}
+.section {
+  margin-bottom: 30px;
+}
+.section h2 {
+  color: #333;
+}
+.section p, .section ol {
+  color: #555;
+  line-height: 1.6;
+}
+.section ol {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 20px;
+}
+.warnateks{
+  height: 300px;
+  color: rgb(240, 240, 245); 
+  font-weight: lighter; 
+  text-align: center; 
+}
+.container {
+  position: relative;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+.centered {
+  position: absolute;
+  top: 20%;
+	text-align: right;
+	text-align: left;
+  text-align: center;
+}
