@@ -300,3 +300,11 @@ body {
 	text-align: left;
   text-align: center;
 }
+#greetings{
+  position:fixed;
+  right:0px;
+  bottom:0px;
+  background:rgb(65, 166, 48);
+  padding:10px;
+  border-radius:20px;
+}
