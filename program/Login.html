@@ -167,4 +167,13 @@ background-color: #45a049;
                component.focus();
              }
            };
-  
+           // Fungsi untuk menangani klik tombol Login
+           const login = () => {
+           // Tambahkan logika login di sini
+           alert("Login button clicked!");
+           };
+           // Event "keypress" pada username untuk membatasi input hanya
+           menerima huruf
+           txt_user.addEventListener("keypress", (event) => {
+           event.returnValue = keyUsername(event);
+           });
