@@ -109,30 +109,62 @@ background-color: #45a049;
           />
         </div>
       </div>
+      
     <!-- Area Passwoard -->
-<div class="area_component">
+   <div class="area_component">
   <!-- Area label -->
-  <div class="area_label">
-  <label for="txt_Passwoard">Passwoard</label>
-  </div>
+   <div class="area_label">
+   <label for="txt_Passwoard">Passwoard</label>
+   </div>
   <!-- Area input -->
-  <div class="area_input">
-  <input
-  type="text"
-  name=""
-  id="txt_Passwoard"
-  placeholder="Isi Passwoard"
-  class="txt_component"
-  />
-  </div>
-  </div>
-  <hr />
-  <!-- Area description -->
-  <div class="area_description">
-  <p>Penjelasan :</p>
-  <p>- Username :Admin hanya dapat mengisikan berupa huruf </p>
-  <p>
-  - Passwoard dapat diisi oleh huruf atau angka
-  </p>
-  </div>
+   <div class="area_input">
+   <input
+   type="text"
+   name=""
+   id="txt_Passwoard"
+   placeholder="Isi Passwoard"
+   class="txt_component"
+   />
+   </div>
+   </div>
+   <hr />
+   <!-- Area description -->
+   <div class="area_description">
+   <p>Penjelasan :</p>
+   <p>- Username :Admin hanya dapat mengisikan berupa huruf </p>
+   <p>
+   - Passwoard dapat diisi oleh huruf atau angka
+   </p>
+   </div>
+
+   <!-- Login Button -->
+   <button id="login-btn" onclick="login()">Login</button>
+
+   <!-- Internal js -->
+       <!-- Internal js -->
+       <script>
+           // Inisialisasi variabel komponen
+           let txt_user = document.querySelector("#txt_user");
+           let txt_Pasword = document.querySelector("#txt_Pasword");
+         
+           // Fungsi untuk membatasi input hanya menerima huruf
+           const keyUsername = (event) => {
+             // Menggunakan regular expression untuk memeriksa apakah input merupakan huruf
+             const regex = /^[a-zA-Z]+$/;
+             return regex.test(event.key);
+           };
+         
+           // Fungsi untuk membatasi input hanya menerima huruf dan angka
+           const keyPassword = (event) => {
+             // Menggunakan regular expression untuk memeriksa apakah input merupakan huruf dan angka
+             const regex = /^[a-zA-Z0-9]+$/;
+             return regex.test(event.key);
+           };
+         
+           // Fungsi untuk berpindah dari username ke password saat menekan Enter
+           const keyEnter = (event, component) => {
+             if (event.key == "Enter") {
+               component.focus();
+             }
+           };
   
