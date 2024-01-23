@@ -5,7 +5,9 @@ var greet;
 
 if (hrs < 12)
   greet = 'Selamat Pagi';
-else if (hrs >= 12 && hrs <= 17)
+else if (hrs >= 12 && hrs <= 15)
+  greet = 'Selamat Siang';
+else if (hrs >= 15 && hrs <= 17)
   greet = 'Selamat Sore';
 else if (hrs >= 17 && hrs <= 24)
   greet = 'Selamat Malam';
