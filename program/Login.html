@@ -176,4 +176,22 @@ background-color: #45a049;
            menerima huruf
            txt_user.addEventListener("keypress", (event) => {
            event.returnValue = keyUsername(event);
+           });// Event "keypress" pada Password untuk membatasi input hanya
+           menerima huruf dan angka
+           txt_Pasword.addEventListener("keypress", (event) => {
+           event.returnValue = keyPassword(event);
            });
+           // Event "keyup" pada username untuk berpindah ke password saat
+           menekan Enter
+           txt_user.addEventListener("keyup", (event) => {
+           keyEnter(event, txt_Pasword);
+           });
+           // Event "keydown" untuk membuka website Teknokrat saat menekan F5
+           window.addEventListener("keydown", (event) => {
+           keyF5(event);
+           });
+           </script>
+           </body>
+           </html>
+           
+           
