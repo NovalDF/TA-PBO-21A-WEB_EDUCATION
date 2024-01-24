@@ -22,3 +22,29 @@ const keyEnter = (event, component) => {
     component.focus();
   }
 };
+
+// Fungsi untuk menangani klik tombol Login
+const login = () => {
+  // Tambahkan logika login di sini
+  alert("Login button clicked!");
+};
+
+// Event "keypress" pada username untuk membatasi input hanya menerima huruf
+txt_user.addEventListener("keypress", (event) => {
+  event.returnValue = keyUsername(event);
+});
+
+// Event "keypress" pada Password untuk membatasi input hanya menerima huruf dan angka
+txt_Passwoard.addEventListener("keypress", (event) => {
+  event.returnValue = keyPassword(event);
+});
+
+// Event "keyup" pada username untuk berpindah ke password saat menekan Enter
+txt_user.addEventListener("keyup", (event) => {
+  keyEnter(event, txt_Passwoard);
+});
+
+// Event "keydown" untuk membuka website Teknokrat saat menekan F5
+window.addEventListener("keydown", (event) => {
+  keyF5(event);
+});
